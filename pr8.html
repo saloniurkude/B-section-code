@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      width: 400px;
+    }
+
+    .form-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 12px 10px 12px 35px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #2575fc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button i {
+      margin-right: 8px;
+    }
+
+    button:hover {
+      background-color: #1a5be1;
+    }
+    .input-container label {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 10px;
+    font-size: 14px;
+    color: rgb(86, 85, 85);
+}
+    button {
+    background: linear-gradient(to right, #9d5c67, #e578a5);
+    color: rgb(98, 91, 91);
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px rgba(245, 133, 149, 0.811);
+    transform: scale(1.05);
+}
+.already-registered {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.already-registered a {
+    color: #ff758c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.already-registered a:hover {
+    text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="form-logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Logo">
+    </div>
+
+    <form class="registration-form">
+      <h2><i class="fas fa-user-plus"></i> Seminar Register Form</h2>
+
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Full Name" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" placeholder="Phone Number" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Confirm Password" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-calendar"></i>
+        <input type="date" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-venus-mars"></i>
+        <select required>
+          <option value="" disabled selected>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-book"></i>
+        <select required>
+          <option value="" disabled selected>Select Course</option>
+          <option>B.Sc</option>
+          <option>BCA</option>
+          <option>B.Com</option>
+          <option>MCA</option>
+          <option>MBA</option>
+        </select>
+      </div>
+     
+
+      <div class="input-group">
+        <i class="fas fa-shield-alt"></i>
+        <input type="text" placeholder="Enter OTP" required />
+      </div>
+      <div class="input-container select">
+        <i class="fa fa-lightbulb"></i>
+        <select required>
+            <option value="" disabled selected>Choose Your Interest</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Photography & Visual Arts">Photography & Visual Arts</option>
+            <option value="Sculpting & Creativity">Sculpting & Creativity</option>
+        </select>
+    </div>
+
+    <input type="checkbox" required> I agree to the seminar's terms and conditions
+
+      <button type="submit"><i class="fas fa-user-check"></i> Register</button>
+    </form>
+    <div class="already-registered">
+        Already registered? <a href="login.html">Login here</a>
+    </div>
+  </div>
+
+</body>
+</html>
