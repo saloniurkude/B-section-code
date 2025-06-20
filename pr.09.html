@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<he<ad>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pepsi - Official Website</title>
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet" />
+<!-- Google Fonts for Custom Font -->
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap
+" rel="stylesheet">
+<!-- Custom CSS -->
+<style>
+/* General styling */
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f7f7f7;
+}
+/* Navbar */
+.navbar {
+background-color: #004C8C;
+padding: 1rem 2rem;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+
+font-weight: 600;
+font-size: 2rem;
+color: #fff;
+letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+color: #fff;
+font-size: 1.1rem;
+padding: 0.5rem 1.5rem;
+text-transform: uppercase;
+transition: 0.3s ease;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+color: #ffb81c;
+}
+/* Hero Section */
+.hero {
+background:
+url('https://via.placeholder.com/1920x800/000000/FFFFFF?text=Pepsi+Hero+Image')
+center/cover no-repeat;
+height: 100vh;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+background-position: center;
+}
+.hero::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.5);
+}
+.hero h1 {
+font-size: 4rem;
+font-weight: 700;
+margin-bottom: 1rem;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.hero p {
+font-size: 1.5rem;
+margin-bottom: 2rem;
+text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+.hero .btn {
+background-color: #ffb81c;
+color: white;
+padding: 1rem 3rem;
+font-size: 1.25rem;
+border-radius: 30px;
+transition: background-color 0.3s ease;
+text-transform: uppercase;
+}
+.hero .btn:hover {
+background-color: #f4a261;
+}
+/* Features Section */
+.features {
+padding: 4rem 2rem;
+background-color: #004C8C;
+color: white;
+}
+.features h2 {
+text-align: center;
+margin-bottom: 3rem;
+}
+.feature-item {
+margin-bottom: 2rem;
+}
+/* Product Carousel */
+.carousel-item img {
+max-height: 500px;
+object-fit: cover;
+}
+/* Accordion Section */
+.accordion-button {
+background-color: #004C8C;
+color: white;
+font-size: 1.1rem;
+padding: 1rem;
+}
+.accordion-button:not(.collapsed) {
+background-color: #ffb81c;
+color: black;
+}
+/* Footer */
+footer {
+background-color: #004C8C;
+color: white;
+padding: 4rem 2rem;
+text-align: center;
+box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+footer .social-icons a {
+color: #fff;
+margin: 0 15px;
+font-size: 1.5rem;
+transition: all 0.3s ease;
+}
+footer .social-icons a:hover {
+color: #ffb81c;
+}
+footer .social-icons {
+margin-bottom: 2rem;
+}
+/* Button hover effect */
+.btn-primary {
+background-color: #004C8C;
+color: rgb(223, 117, 117);
+border-radius: 30px;
+padding: 0.8rem 2rem;
+text-transform: uppercase;
+font-weight: 600;
+transition: 0.3s ease;
+}
+.btn-primary:hover {
+background-color: #ffb81c;
+color: rgb(95, 166, 207);
+}
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">Pepsi</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs￾target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+<li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero" id="hero">
+<div>
+<h1>Welcome to Pepsi</h1>
+<p>Refreshing, Bold, and Always Delicious</p>
+<a href="#features" class="btn">Explore More</a>
+</div>
+</section>
+<!-- Features Section -->
+<section class="features" id="features">
+<h1>Our Features : </h1>
+<div class="container">
+<div class="row">
+<div class="col-md-4 feature-item">
+<h4>Refreshing Taste</h4>
+<p>Pepsi offers the perfect balance of sweetness and carbonation, making it the ideal
+refreshment.</p>
+</div>
+<div class="col-md-4 feature-item">
+<h4>Bold Flavor</h4>
+<p>Experience the bold, refreshing flavor that Pepsi has been delivering for over a
+century.</p>
+</div>
+<div class="col-md-4 feature-item">
+<h4>Global Popularity</h4>
+<p>Pepsi is enjoyed by millions across the globe, making it a beloved brand for every
+occasion.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Carousel -->
+<section class="products" id="products">
+<body bgcolor="light pink"></body>
+<h1>Our Products : </h1>
+<div class="container">
+<div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="C:\Users\HP\Downloads\peps.jpg" class="d-block w-100" alt="Pepsi
+Product 1">
+</div>
+<div class="carousel-item">
+<img src="C:\Users\HP\Downloads\pepsssi.jpg" class="d-block w-100" alt="Pepsi
+Product 2">
+<h5>"choose your favourite pepsi"</h5>
+</div>
+<div class="carousel-item">
+<img src="C:\Users\HP\Downloads\pep.jpg" class="d-block w-100" alt="Pepsi
+Product 3">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+<h2>Contact Us : </h2>
+<body bgcolor="sky blue"></body>
+<div class="container">
+<form>
+
+<input type="text" placeholder="Your Name" class="form-control" required />
+<input type="email" placeholder="Your Email" class="form-control" required />
+<textarea class="form-control" placeholder="Your Message" rows="4"
+required></textarea>
+<button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="social-icons">
+<a href="#" target="_blank" class="fab fa-facebook-f"></a>
+<a href="#" target="_blank" class="fab fa-twitter"></a>
+<a href="#" target="_blank" class="fab fa-instagram"></a>
+<a href="#" target="_blank" class="fab fa-linkedin-in"></a>
+</div>
+<p>&copy; 2025 PepsiCo. All rights reserved.</p>
+</footer>
+<!-- Bootstrap JS -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
